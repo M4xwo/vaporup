@@ -14,9 +14,9 @@ description = "Vapor is a tool for classification of Influenza samples from shor
 readme = "README.md"
 requires-python = ">=3.8"
 keywords = ["virology"]
-license = {file = "LICENSE"}
+license = "GPL-3.0-or-later"
+license-files = ["LICENSE"]
 classifiers = [
-    "License :: OSI Approved :: GPL-3.0-or-later",
     "Programming Language :: Python :: 3",
     "Development Status :: 4 - Beta",
     "Operating System :: OS Independent",
@@ -30,12 +30,11 @@ dependencies = [
 ]
 dynamic = ["version"]
 
-[project.scripts]
-vapor.py = "vapor:cli"
-
 [project.urls]
 "Homepage" = "https://github.com/wm75/vaporup"
 
 [tool.setuptools.dynamic]
 version = {attr = "pyvapor.__version__"}
 
+[tool.setuptools]
+script-files = ["vapor.py"]
