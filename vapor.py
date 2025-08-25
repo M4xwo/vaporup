@@ -173,9 +173,7 @@ def cli():
     args = parser.parse_args()
 
     if args.version == True:
-        import pkg_resources
-        version = pkg_resources.require("vapor")[0].version
-        print(version)
+        print(vp.__version__)
         sys.exit(1)
 
     # Set some thresholds for user input
