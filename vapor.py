@@ -143,7 +143,8 @@ def main(args):
                 mean = str(score/slen)
                 print(str(est_pid) + "\t" + str(score)+"\t"+str(slen)+"\t" +str(mean) + "\t"+ str(nreads) + "\t"+seqsh[c])
 
-if __name__ == '__main__':
+
+def cli():
     # Parse arguments
     parser = argparse.ArgumentParser(description="Do some viral classification!")
     group = parser.add_mutually_exclusive_group()
@@ -194,3 +195,7 @@ if __name__ == '__main__':
         sys.stderr.write("\nPlease input valid kmer length ({} to {}) \n \n".format(min_kmer, max_kmer))
         parser.print_help(sys.stderr)
         sys.exit(1)
+
+
+if __name__ == '__main__':
+    cli()

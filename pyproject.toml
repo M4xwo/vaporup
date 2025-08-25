@@ -1,0 +1,41 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "vapor"
+authors = [
+    {name = "Joel Southgate"},
+]
+maintainers = [
+    {name = "Wolfgang Maier", email = "maierw@informatik.uni-freiburg.de"},
+]
+description = "Vapor is a tool for classification of Influenza samples from short read sequence data, which can be apllied also to other viruses."
+readme = "README.md"
+requires-python = ">=3.8"
+keywords = ["virology"]
+license = {file = "LICENSE"}
+classifiers = [
+    "License :: OSI Approved :: GPL-3.0-or-later",
+    "Programming Language :: Python :: 3",
+    "Development Status :: 4 - Beta",
+    "Operating System :: OS Independent",
+    "Topic :: Scientific/Engineering",
+    "Topic :: Scientific/Engineering :: Bio-Informatics",
+    "Intended Audience :: Science/Research",
+    "Natural Language :: English",
+]
+dependencies = [
+    "numpy>=1.15.1"
+]
+dynamic = ["version"]
+
+[project.scripts]
+vapor.py = "vapor:cli"
+
+[project.urls]
+"Homepage" = "https://github.com/wm75/vaporup"
+
+[tool.setuptools.dynamic]
+version = {attr = "pyvapor.__version__"}
+
