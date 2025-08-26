@@ -3,7 +3,7 @@ requires = ["setuptools>=61.0"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "vapor"
+name = "vaporup"
 authors = [
     {name = "Joel Southgate"},
 ]
@@ -11,7 +11,7 @@ maintainers = [
     {name = "Wolfgang Maier", email = "maierw@informatik.uni-freiburg.de"},
 ]
 description = "Vapor is a tool for classification of Influenza samples from short read sequence data, which can be apllied also to other viruses."
-readme = "README.md"
+readme = "pkg_long_description.md"
 requires-python = ">=3.8"
 keywords = ["virology"]
 license = "GPL-3.0-or-later"

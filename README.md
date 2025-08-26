@@ -1,23 +1,24 @@
-VaporUp is an actively developed and maintained version of Vapor, a tool for classification of Influenza samples from raw short read sequence data. From a fasta file of (preferably thousands of) full-length viral reference sequences for a given segment, and a set of reads, VaporUp attempts to identify the reference that is closest to the sample strain.
+VaporUp is an actively developed and maintained version of [Vapor](https://bio.tools/vapor), a tool for classification of Influenza samples from raw short read sequence data. From a fasta file of (preferably thousands of) full-length viral reference sequences for a given segment, and a set of reads, VaporUp attempts to identify the reference that is closest to the sample strain.
+
 
 **Installation**
 
-- From the development repo:
-
-  `pip install git+https://github.com/wm75/vaporup`
-
 - From PyPI:
 
-  coming soon
+  `pip install vaporup`
 
 - From bioconda:
 
   coming soon
 
+- From the development repo:
+
+  `pip install git+https://github.com/wm75/vaporup`
+
 
 **Testing**
 
-A test dataset is provided in the tests folder of the developemnt repo.
+Test datasets are provided in the tests folder of this repo.
 After cloning, tests can be run with:
 
     vapor.py -fq tests/test_reads.fq -fa tests/HA_sample.fa
