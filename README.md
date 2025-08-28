@@ -5,7 +5,9 @@ VaporUp is an actively developed and maintained version of [Vapor](https://bio.t
 
 - From PyPI:
 
-  `pip install vaporup`
+  ```
+  pip install vaporup
+  ```
 
 - From bioconda (with dependencies from conda-forge):
 
@@ -16,7 +18,9 @@ VaporUp is an actively developed and maintained version of [Vapor](https://bio.t
 
 - From the development repo:
 
-  `pip install git+https://github.com/wm75/vaporup`
+  ```
+  pip install git+https://github.com/wm75/vaporup
+  ```
 
 
 **Testing**
