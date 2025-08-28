@@ -7,9 +7,12 @@ VaporUp is an actively developed and maintained version of [Vapor](https://bio.t
 
   `pip install vaporup`
 
-- From bioconda:
+- From bioconda (with dependencies from conda-forge):
 
-  coming soon
+  ```
+  conda create -n vaporup -c conda-forge -c bioconda vapor
+  conda activate vaporup
+  ```
 
 - From the development repo:
 
